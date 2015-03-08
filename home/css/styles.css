@@ -1,0 +1,259 @@
+body {
+  font-family: monospace;
+  font-size: 18px;
+  background: #FFC300;
+  color: #666;
+  margin: 0;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+#blog{
+  color: #fff;
+  font-family: Verdana;
+  position: relative;
+  top: 35px;
+  left: 30px;
+}
+
+#flex {
+  position: fixed;
+  top: 159px;
+  left: 20%;
+  }
+
+.letter{
+  height: 20em;
+  width: auto;
+  position: relative;
+  -webkit-clip-path: url(#myClip);
+  clip-path: url(#myClip);
+  z-index: 2;
+}
+
+#circle {
+    position: fixed;
+    background: #000;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+#circle2 {
+    position: relative;
+    left: 450px;
+    bottom: 80px;
+    background: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.letter:hover{
+    -webkit-transition: 0s;
+    -webkit-animation: up 1s;
+    -moz-animation:up 1s;
+    -ms-animation:up 1s;
+    -o-animation:up 1s;
+    -animation:up 1s;
+  }
+
+@-webkit-keyframes up{
+  0% {top:0px;}
+  30% {top:-180px;}
+  70% {top:-180px;}
+  100% {top:0px;}
+}
+
+@-moz-keyframes up{
+  0% {top:0px;}
+  30% {top:-180px;}
+  70% {top:-180px;}
+  100% {top:0px;}
+}
+
+@-ms-keyframes up{
+  0% {top:0px;}
+  30% {top:-180px;}
+  70% {top:-180px;}
+  100% {top:0px;}
+}
+
+@-o-keyframes up{
+  0% {top:0px;}
+  30% {top:-180px;}
+  70% {top:-180px;}
+  100% {top:0px;}
+}
+
+@keyframes up{
+  0% {top:0px;}
+  30% {top:-180px;}
+  70% {top:-180px;}
+  100% {top:0px;}
+}
+
+#ufo {
+  width: 14em;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  z-index: -1;
+  -webkit-animation: beam 5s infinite alternate;
+  animation: beam 5s infinite alternate;
+}
+
+@-webkit-keyframes beam{
+  0%  {transform: rotate(0deg);}
+  10% {transform: rotate(-12deg);}
+  30% {transform: rotate(9deg);}
+  35% {transform: rotate(5deg);}
+  40% {transform: rotate(13deg);}
+  45% {transform: rotate(0deg);}
+  50% {transform: rotate(16deg);}
+  60% {transform: rotate(-10deg);}
+  85% {transform: rotate(10deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes beam{
+  0%  {transform: rotate(0deg);}
+  10% {top: 28%; transform: rotate(-19deg);}
+  30% {left: 41%; transform: rotate(20deg);}
+  35% {transform: rotate(5deg);}
+  40% {top: 29%; transform: rotate(18deg);}
+  45% {transform: rotate(13deg);}
+  50% {transform: rotate(16deg);}
+  60% {top: 31%; transform: rotate(-10deg);}
+  85% {transform: rotate(10deg);}
+  100% {transform: rotate(0deg);}
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0.4em 0;
+  cursor: pointer;
+}
+
+button {
+  border: 10px solid #00FFAA;
+  font-family: monospace;
+  position: absolute;
+  line-height: 60px;
+  text-align: right;
+  padding: 0 1.2em;
+  background: #444;
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  height: 80px;
+  width: 80%;
+  top: 260px;
+  margin: 0;
+  left: 10%;
+}
+
+button:hover {
+  background: #00FFAA;
+}
+
+input[type=checkbox] + label:before {
+  display: inline-block;
+  position: relative;
+  background: #444;
+  margin-right: 8px;
+  content: "";
+  height: 16px;
+  width: 16px;
+  top: 1px;
+}
+
+input[type=checkbox]:checked + label:before {
+  background: #00FFAA;
+}
+
+.container {
+  position: relative;
+}
+
+.scene {
+  position: relative;
+  top:440px;
+  left:-40px;
+  padding: 0;
+  margin: 0;
+}
+
+.fill {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+  top: 5%;
+}
+
+.expand-width {
+  width: 100%;
+}
+
+.border {
+  border: 2px dashed #00FFAA;
+}
+
+/*.aspect {
+  opacity: 0.2;
+}
+
+.layer:nth-child(1) {
+  opacity: 0.15;
+}
+.layer:nth-child(1) button {
+  -webkit-transform: rotate(150deg);
+}
+
+.layer:nth-child(2) {
+  opacity: 0.30;
+}
+.layer:nth-child(2) button {
+  -webkit-transform: rotate(120deg);
+}
+
+.layer:nth-child(3) {
+  opacity: 0.45;
+}
+.layer:nth-child(3) button {
+  -webkit-transform: rotate(90deg);
+}
+
+.layer:nth-child(4) {
+  opacity: 0.60;
+}
+.layer:nth-child(4) button {
+  -webkit-transform: rotate(60deg);
+}
+
+.layer:nth-child(5) {
+  opacity: 0.75;
+}
+.layer:nth-child(5) button {
+  -webkit-transform: rotate(30deg);
+}
+
+.layer:nth-child(6) {
+  opacity: 0.90;
+}
+.layer:nth-child(6) button {
+}*/
