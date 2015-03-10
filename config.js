@@ -14,16 +14,16 @@ config = {
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions
         // ```
-        //  mail: {
-        //      transport: 'SMTP',
-        //      options: {
-        //          service: 'Mailgun',
-        //          auth: {
-        //              user: '', // mailgun username
-        //              pass: ''  // mailgun password
-        //          }
-        //      }
-        //  },
+         mail: {
+             transport: 'SMTP',
+             options: {
+                 service: 'Mailgun',
+                 auth: {
+                     user: 'postmaster@seahyingcong.com', // mailgun username
+                     pass: '5b7227df8ae5dcb69b5d08df4868d4d5'  // mailgun password
+                 }
+             }
+         },
         // ```
 
         database: {
@@ -49,7 +49,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://seahyingcong.com',
-        mail: {},
+         mail: {
+             transport: 'SMTP',
+             options: {
+                 service: 'Mailgun',
+                 auth: {
+                     user: 'postmaster@seahyingcong.com', // mailgun username
+                     pass: '5b7227df8ae5dcb69b5d08df4868d4d5'  // mailgun password
+                 }
+             }
+         },
         database: {
             client: 'sqlite3',
             connection: {
