@@ -103,8 +103,8 @@ a{
 #ufo {
   width: 14em;
   position: fixed;
-  top: 30%;
-  left: 40%;
+  top: 495px;
+  left: 690px;
   z-index: -1;
   -webkit-animation: beam 5s infinite alternate;
   animation: beam 5s infinite alternate;

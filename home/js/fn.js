@@ -6,7 +6,7 @@ $(document).mousemove(function(e){
 
 // cache the selector
 var follower = $("#ufo");
-var xp = 0, yp = 0;
+var xp = 600, yp = 600;
 var loop = setInterval(function(){
     // change 12 to alter damping higher is slower
     xp += (mouseX - xp) / 100;
